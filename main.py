@@ -24,11 +24,14 @@ def saving_to_file(outcome, alphabet2):
                 yeet.write(alpha[i] + ' - ' + outcome[i] + '\n')  # saving to a file
         yeet.write('---------------')  # little break so we can differ our savings in output file
 
-
-if __name__ == '__main__':
+def main():
     filename = input('Please specify document you want to open \n')  # specify input file
     comet = opening_file(filename)  # reading file's content and passing it into comet variable
     calculated, alphabet = calculating_letters(comet)  # calculating how many the same letters are in
     saving_to_file(calculated, alphabet)  # passing our string with results and alphabet(so we don't need to retype it)
+
+
+if __name__ == '__main__':
+    main()
 
 
